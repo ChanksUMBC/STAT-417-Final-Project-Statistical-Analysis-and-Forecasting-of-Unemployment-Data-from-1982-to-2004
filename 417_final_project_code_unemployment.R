@@ -251,7 +251,7 @@ plot(myforecast)
 yhat6<-myforecast$mean
 
 #do holt winters smoothing with seasonality and trend included
-j<-HoltWinters(datanew,alpha = TRUE,beta = TRUE,gamma = TRUE)
+j<-HoltWinters(datanew)
 
 #forecast using the holt winters smoothing
 for2<-forecast(j,h=24)
